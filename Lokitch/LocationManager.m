@@ -66,13 +66,10 @@
 
 #pragma mark - Default Data Provider
 
-@interface ScselectDataProvider () {
+@implementation ScselectDataProvider {
     NSMutableArray  *_identifiersAndNames;
     NSString        *_activeIdentifier;
 }
-@end
-
-@implementation ScselectDataProvider
 
 - (NSArray *)identifiersAndNames {
     if (!_identifiersAndNames) {

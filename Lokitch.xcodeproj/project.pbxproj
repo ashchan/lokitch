@@ -24,6 +24,10 @@
 		1A3D5C04176D6AB60027901B /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D5C02176D6AB60027901B /* Location.m */; };
 		1A552039176DB4AB00788EFE /* LocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A552038176DB4AB00788EFE /* LocationManagerTests.m */; };
 		1A66C856176DC11800CDFACC /* LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66C855176DC11800CDFACC /* LocationTests.m */; };
+		1A66C859176DDCC700CDFACC /* WLANManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66C858176DDCC700CDFACC /* WLANManager.m */; };
+		1A66C85A176DDCC700CDFACC /* WLANManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66C858176DDCC700CDFACC /* WLANManager.m */; };
+		1A66C85D176DE69200CDFACC /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66C85C176DE69200CDFACC /* ApplicationController.m */; };
+		1A66C85E176DE69200CDFACC /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66C85C176DE69200CDFACC /* ApplicationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		1A3D5C02176D6AB60027901B /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		1A552038176DB4AB00788EFE /* LocationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManagerTests.m; sourceTree = "<group>"; };
 		1A66C855176DC11800CDFACC /* LocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTests.m; sourceTree = "<group>"; };
+		1A66C857176DDCC700CDFACC /* WLANManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLANManager.h; sourceTree = "<group>"; };
+		1A66C858176DDCC700CDFACC /* WLANManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLANManager.m; sourceTree = "<group>"; };
+		1A66C85B176DE69200CDFACC /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
+		1A66C85C176DE69200CDFACC /* ApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +135,14 @@
 		1A3D5BCF176D5F0F0027901B /* Lokitch */ = {
 			isa = PBXGroup;
 			children = (
+				1A66C857176DDCC700CDFACC /* WLANManager.h */,
+				1A66C858176DDCC700CDFACC /* WLANManager.m */,
 				1A3D5C01176D6AB60027901B /* Location.h */,
 				1A3D5C02176D6AB60027901B /* Location.m */,
 				1A3D5BFD176D69150027901B /* LocationManager.h */,
 				1A3D5BFE176D69150027901B /* LocationManager.m */,
+				1A66C85B176DE69200CDFACC /* ApplicationController.h */,
+				1A66C85C176DE69200CDFACC /* ApplicationController.m */,
 				1A3D5BDB176D5F0F0027901B /* AppDelegate.h */,
 				1A3D5BDC176D5F0F0027901B /* AppDelegate.m */,
 				1A3D5BDE176D5F0F0027901B /* MainMenu.xib */,
@@ -270,9 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A66C85D176DE69200CDFACC /* ApplicationController.m in Sources */,
 				1A3D5BFF176D69150027901B /* LocationManager.m in Sources */,
 				1A3D5BDD176D5F0F0027901B /* AppDelegate.m in Sources */,
 				1A3D5C03176D6AB60027901B /* Location.m in Sources */,
+				1A66C859176DDCC700CDFACC /* WLANManager.m in Sources */,
 				1A3D5BD6176D5F0F0027901B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,11 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A66C85E176DE69200CDFACC /* ApplicationController.m in Sources */,
 				1A552039176DB4AB00788EFE /* LocationManagerTests.m in Sources */,
 				1A66C856176DC11800CDFACC /* LocationTests.m in Sources */,
 				1A3D5C00176D69150027901B /* LocationManager.m in Sources */,
 				1A3D5C04176D6AB60027901B /* Location.m in Sources */,
 				1A3D5BF4176D5F100027901B /* LokitchTests.m in Sources */,
+				1A66C85A176DDCC700CDFACC /* WLANManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

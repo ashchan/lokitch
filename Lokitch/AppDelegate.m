@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "ApplicationController.h"
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    ApplicationController *_appController;
+}
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    _appController = [[ApplicationController alloc] init];
 }
 
 @end
