@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3D5BCA176D5F0F0027901B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3D5BC9176D5F0F0027901B /* Cocoa.framework */; };
+		1A3D5BD4176D5F0F0027901B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D5BD2176D5F0F0027901B /* InfoPlist.strings */; };
+		1A3D5BD6176D5F0F0027901B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D5BD5176D5F0F0027901B /* main.m */; };
+		1A3D5BDA176D5F0F0027901B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D5BD8176D5F0F0027901B /* Credits.rtf */; };
+		1A3D5BDD176D5F0F0027901B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D5BDC176D5F0F0027901B /* AppDelegate.m */; };
+		1A3D5BE0176D5F0F0027901B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D5BDE176D5F0F0027901B /* MainMenu.xib */; };
+		1A3D5BE2176D5F0F0027901B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D5BE1176D5F0F0027901B /* Images.xcassets */; };
+		1A3D5BE9176D5F100027901B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3D5BE8176D5F100027901B /* XCTest.framework */; };
+		1A3D5BEA176D5F100027901B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3D5BC9176D5F0F0027901B /* Cocoa.framework */; };
+		1A3D5BF2176D5F100027901B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D5BF0176D5F100027901B /* InfoPlist.strings */; };
+		1A3D5BF4176D5F100027901B /* LokitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D5BF3176D5F100027901B /* LokitchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A3D5BEB176D5F100027901B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3D5BBE176D5F0F0027901B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A3D5BC5176D5F0F0027901B;
+			remoteInfo = Lokitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A3D5BC6176D5F0F0027901B /* Lokitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lokitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3D5BC9176D5F0F0027901B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1A3D5BCC176D5F0F0027901B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1A3D5BCD176D5F0F0027901B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A3D5BCE176D5F0F0027901B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A3D5BD1176D5F0F0027901B /* Lokitch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lokitch-Info.plist"; sourceTree = "<group>"; };
+		1A3D5BD3176D5F0F0027901B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A3D5BD5176D5F0F0027901B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A3D5BD7176D5F0F0027901B /* Lokitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lokitch-Prefix.pch"; sourceTree = "<group>"; };
+		1A3D5BD9176D5F0F0027901B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1A3D5BDB176D5F0F0027901B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A3D5BDC176D5F0F0027901B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A3D5BDF176D5F0F0027901B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1A3D5BE1176D5F0F0027901B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A3D5BE7176D5F100027901B /* LokitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = LokitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3D5BE8176D5F100027901B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1A3D5BEF176D5F100027901B /* LokitchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LokitchTests-Info.plist"; sourceTree = "<group>"; };
+		1A3D5BF1176D5F100027901B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A3D5BF3176D5F100027901B /* LokitchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LokitchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A3D5BC3176D5F0F0027901B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3D5BCA176D5F0F0027901B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A3D5BE4176D5F100027901B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3D5BEA176D5F100027901B /* Cocoa.framework in Frameworks */,
+				1A3D5BE9176D5F100027901B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3D5BBD176D5F0F0027901B = {
+			isa = PBXGroup;
+			children = (
+				1A3D5BCF176D5F0F0027901B /* Lokitch */,
+				1A3D5BED176D5F100027901B /* LokitchTests */,
+				1A3D5BC8176D5F0F0027901B /* Frameworks */,
+				1A3D5BC7176D5F0F0027901B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A3D5BC7176D5F0F0027901B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D5BC6176D5F0F0027901B /* Lokitch.app */,
+				1A3D5BE7176D5F100027901B /* LokitchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A3D5BC8176D5F0F0027901B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D5BC9176D5F0F0027901B /* Cocoa.framework */,
+				1A3D5BE8176D5F100027901B /* XCTest.framework */,
+				1A3D5BCB176D5F0F0027901B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A3D5BCB176D5F0F0027901B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D5BCC176D5F0F0027901B /* AppKit.framework */,
+				1A3D5BCD176D5F0F0027901B /* CoreData.framework */,
+				1A3D5BCE176D5F0F0027901B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1A3D5BCF176D5F0F0027901B /* Lokitch */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D5BDB176D5F0F0027901B /* AppDelegate.h */,
+				1A3D5BDC176D5F0F0027901B /* AppDelegate.m */,
+				1A3D5BDE176D5F0F0027901B /* MainMenu.xib */,
+				1A3D5BE1176D5F0F0027901B /* Images.xcassets */,
+				1A3D5BD0176D5F0F0027901B /* Supporting Files */,
+			);
+			path = Lokitch;
+			sourceTree = "<group>";
+		};
+		1A3D5BD0176D5F0F0027901B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D5BD1176D5F0F0027901B /* Lokitch-Info.plist */,
+				1A3D5BD2176D5F0F0027901B /* InfoPlist.strings */,
+				1A3D5BD5176D5F0F0027901B /* main.m */,
+				1A3D5BD7176D5F0F0027901B /* Lokitch-Prefix.pch */,
+				1A3D5BD8176D5F0F0027901B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A3D5BED176D5F100027901B /* LokitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D5BF3176D5F100027901B /* LokitchTests.m */,
+				1A3D5BEE176D5F100027901B /* Supporting Files */,
+			);
+			path = LokitchTests;
+			sourceTree = "<group>";
+		};
+		1A3D5BEE176D5F100027901B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D5BEF176D5F100027901B /* LokitchTests-Info.plist */,
+				1A3D5BF0176D5F100027901B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A3D5BC5176D5F0F0027901B /* Lokitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A3D5BF7176D5F100027901B /* Build configuration list for PBXNativeTarget "Lokitch" */;
+			buildPhases = (
+				1A3D5BC2176D5F0F0027901B /* Sources */,
+				1A3D5BC3176D5F0F0027901B /* Frameworks */,
+				1A3D5BC4176D5F0F0027901B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lokitch;
+			productName = Lokitch;
+			productReference = 1A3D5BC6176D5F0F0027901B /* Lokitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A3D5BE6176D5F100027901B /* LokitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A3D5BFA176D5F100027901B /* Build configuration list for PBXNativeTarget "LokitchTests" */;
+			buildPhases = (
+				1A3D5BE3176D5F100027901B /* Sources */,
+				1A3D5BE4176D5F100027901B /* Frameworks */,
+				1A3D5BE5176D5F100027901B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A3D5BEC176D5F100027901B /* PBXTargetDependency */,
+			);
+			name = LokitchTests;
+			productName = LokitchTests;
+			productReference = 1A3D5BE7176D5F100027901B /* LokitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A3D5BBE176D5F0F0027901B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ashchan.com;
+				TargetAttributes = {
+					1A3D5BE6176D5F100027901B = {
+						TestTargetID = 1A3D5BC5176D5F0F0027901B;
+					};
+				};
+			};
+			buildConfigurationList = 1A3D5BC1176D5F0F0027901B /* Build configuration list for PBXProject "Lokitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A3D5BBD176D5F0F0027901B;
+			productRefGroup = 1A3D5BC7176D5F0F0027901B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A3D5BC5176D5F0F0027901B /* Lokitch */,
+				1A3D5BE6176D5F100027901B /* LokitchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A3D5BC4176D5F0F0027901B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3D5BD4176D5F0F0027901B /* InfoPlist.strings in Resources */,
+				1A3D5BE2176D5F0F0027901B /* Images.xcassets in Resources */,
+				1A3D5BDA176D5F0F0027901B /* Credits.rtf in Resources */,
+				1A3D5BE0176D5F0F0027901B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A3D5BE5176D5F100027901B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3D5BF2176D5F100027901B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A3D5BC2176D5F0F0027901B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3D5BDD176D5F0F0027901B /* AppDelegate.m in Sources */,
+				1A3D5BD6176D5F0F0027901B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A3D5BE3176D5F100027901B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3D5BF4176D5F100027901B /* LokitchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A3D5BEC176D5F100027901B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A3D5BC5176D5F0F0027901B /* Lokitch */;
+			targetProxy = 1A3D5BEB176D5F100027901B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A3D5BD2176D5F0F0027901B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A3D5BD3176D5F0F0027901B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A3D5BD8176D5F0F0027901B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A3D5BD9176D5F0F0027901B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1A3D5BDE176D5F0F0027901B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A3D5BDF176D5F0F0027901B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1A3D5BF0176D5F100027901B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A3D5BF1176D5F100027901B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A3D5BF5176D5F100027901B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1A3D5BF6176D5F100027901B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1A3D5BF8176D5F100027901B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lokitch/Lokitch-Prefix.pch";
+				INFOPLIST_FILE = "Lokitch/Lokitch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A3D5BF9176D5F100027901B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lokitch/Lokitch-Prefix.pch";
+				INFOPLIST_FILE = "Lokitch/Lokitch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A3D5BFB176D5F100027901B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lokitch.app/Contents/MacOS/Lokitch";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lokitch/Lokitch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LokitchTests/LokitchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1A3D5BFC176D5F100027901B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lokitch.app/Contents/MacOS/Lokitch";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lokitch/Lokitch-Prefix.pch";
+				INFOPLIST_FILE = "LokitchTests/LokitchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A3D5BC1176D5F0F0027901B /* Build configuration list for PBXProject "Lokitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3D5BF5176D5F100027901B /* Debug */,
+				1A3D5BF6176D5F100027901B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A3D5BF7176D5F100027901B /* Build configuration list for PBXNativeTarget "Lokitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3D5BF8176D5F100027901B /* Debug */,
+				1A3D5BF9176D5F100027901B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A3D5BFA176D5F100027901B /* Build configuration list for PBXNativeTarget "LokitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3D5BFB176D5F100027901B /* Debug */,
+				1A3D5BFC176D5F100027901B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A3D5BBE176D5F0F0027901B /* Project object */;
+}
