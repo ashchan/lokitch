@@ -9,6 +9,7 @@
 #import "ApplicationController.h"
 #import "WLANManager.h"
 #import "LocationManager.h"
+#import "Location.h"
 
 NSString *const ConfigKeySSIDs = @"ConfigKeySSIDs";
 
@@ -34,6 +35,7 @@ NSString *const ConfigKeySSIDs = @"ConfigKeySSIDs";
         Location *location = [[LocationManager sharedManager] findLocationByIdentifier:locationIdentifier];
         if (location && location != [[LocationManager sharedManager] currentLocation]) {
             [[LocationManager sharedManager] selectLocation:location];
+            NSLog(@"Switched to location: %@ for SSID: %@", [location name], ssid);
         }
     }
 }
