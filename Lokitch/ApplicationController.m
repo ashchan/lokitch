@@ -41,27 +41,42 @@ NSString *const ConfigKeySSIDs = @"ConfigKeySSIDs";
 }
 
 - (NSString *)fetchLocationIdentifierForSsid:(NSString *)ssid {
-    NSDictionary *configuration = [self ssidConfiguration];
-    if (ConfigKeySSIDs) {
-        return configuration[ssid];
-    } else {
-        return nil;
+    NSArray *configuration = [self ssidConfiguration];
+    for (NSDictionary *item in configuration) {
+        if ([ssid isEqualToString:item[@"ssid"]]) {
+            return item[@"location"];
+        }
     }
+
+    return nil;
 }
 
-- (void)setLocationIdentifierForSsid:(NSString *)ssid identifier:(NSString *)identifier {
-    NSDictionary *configuration = [self ssidConfiguration];
-    NSMutableDictionary *writer = [configuration mutableCopy];
+- (void)setLocationIdentifier:(NSString *)identifier forSsid:(NSString *)ssid {
+    NSArray *configuration = [self ssidConfiguration];
+    NSMutableArray *writer = [configuration mutableCopy];
     if (!writer) {
-        writer = [[NSMutableDictionary alloc] init];
+        writer = [[NSMutableArray alloc] init];
     }
-    writer[ssid] = identifier;
+
+    NSMutableDictionary *item   = [[NSMutableDictionary alloc] init];
+    item[@"ssid"]               = ssid;
+    item[@"location"]           = identifier;
+
+    NSUInteger exisitingItemIndex = [configuration indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
+        return [ssid isEqualToString:obj[@"ssid"]];
+    }];
+    if (exisitingItemIndex != NSNotFound) {
+        writer[exisitingItemIndex] = item;
+    } else {
+        [writer addObject:item];
+    }
+
     [[NSUserDefaults standardUserDefaults] setObject:writer forKey:ConfigKeySSIDs];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (NSDictionary *)ssidConfiguration {
-    return [[NSUserDefaults standardUserDefaults] dictionaryForKey:ConfigKeySSIDs];
+- (NSArray *)ssidConfiguration {
+    return [[NSUserDefaults standardUserDefaults] arrayForKey:ConfigKeySSIDs];
 }
 
 @end
