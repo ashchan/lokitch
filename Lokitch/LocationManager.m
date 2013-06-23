@@ -40,7 +40,6 @@
         return nil;
     }
 
-    [self useDefaultDataProvider];
     for (Location *location in [self locations]) {
         if ([location.identifier isEqualToString:identifier]) {
             return location;
@@ -50,7 +49,7 @@
 }
 
 - (Location *)currentLocation {
-    return [self findLocationByIdentifier:[self.dataProvider activeIdentifier]];
+    return [self findLocationByIdentifier:[self currentLocationIdentifier]];
 }
 
 - (void)selectLocation:(Location *)location {
@@ -67,6 +66,7 @@
 }
 
 - (NSString *)currentLocationIdentifier {
+    [self useDefaultDataProvider];
     return [self.dataProvider activeIdentifier];
 }
 
@@ -92,6 +92,9 @@
         for (NSString *line in [lines subarrayWithRange:range]) {
             NSArray *scselectLine = [self parseScselectLine:line];
             [_identifiersAndNames addObject:@[scselectLine[0], scselectLine[1]]];
+            if ([scselectLine[2] boolValue]) {
+                _activeIdentifier = [scselectLine[0] copy];
+            }
         }
     }
     return _identifiersAndNames;

@@ -33,7 +33,7 @@ NSString *const ConfigKeySSIDs = @"ConfigKeySSIDs";
     if (ssid) {
         NSString *locationIdentifier = [self fetchLocationIdentifierForSsid:ssid];
         Location *location = [[LocationManager sharedManager] findLocationByIdentifier:locationIdentifier];
-        if (location && location != [[LocationManager sharedManager] currentLocation]) {
+        if (location && ![location isEqual:[[LocationManager sharedManager] currentLocation]]) {
             [[LocationManager sharedManager] selectLocation:location];
             NSLog(@"Switched to location: %@ for SSID: %@", [location name], ssid);
         }
