@@ -46,6 +46,15 @@
     XCTAssertEqualObjects([[Location alloc] initWithIdentifier:@"ID-Tython" Name:@"Tython"], locations[2]);
 }
 
+- (void)testFindLocationByIdentifier {
+    [self useDoubleDataProvider];
+
+    LocationManager *locationManager = [LocationManager sharedManager];
+    XCTAssertNil([locationManager findLocationByIdentifier:nil]);
+    XCTAssertNil([locationManager findLocationByIdentifier:@"ID-NotFound"]);
+    XCTAssertEqualObjects([[Location alloc] initWithIdentifier:@"ID-Tython" Name:@"Tython"], [locationManager findLocationByIdentifier:@"ID-Tython"]);
+}
+
 - (void)testCurrentLocation {
     [self useDoubleDataProvider];
 

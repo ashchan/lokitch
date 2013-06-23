@@ -35,14 +35,22 @@
     return results;
 }
 
-- (Location *)currentLocation {
+- (Location *)findLocationByIdentifier:(NSString *)identifier {
+    if (!identifier) {
+        return nil;
+    }
+
     [self useDefaultDataProvider];
     for (Location *location in [self locations]) {
-        if ([location.identifier isEqualToString:[self currentLocationIdentifier]]) {
+        if ([location.identifier isEqualToString:identifier]) {
             return location;
         }
     }
     return nil;
+}
+
+- (Location *)currentLocation {
+    return [self findLocationByIdentifier:[self.dataProvider activeIdentifier]];
 }
 
 - (void)selectLocation:(Location *)location {

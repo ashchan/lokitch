@@ -8,6 +8,9 @@
 
 #import "ApplicationController.h"
 #import "WLANManager.h"
+#import "LocationManager.h"
+
+NSString *const ConfigKeySSIDs = @"ConfigKeySSIDs";
 
 @implementation ApplicationController
 
@@ -27,8 +30,36 @@
 - (void)switchLocation {
     NSString *ssid = [[WLANManager sharedManager] ssid];
     if (ssid) {
-        //TODO
+        NSString *locationIdentifier = [self fetchLocationIdentifierForSsid:ssid];
+        Location *location = [[LocationManager sharedManager] findLocationByIdentifier:locationIdentifier];
+        if (location && location != [[LocationManager sharedManager] currentLocation]) {
+            [[LocationManager sharedManager] selectLocation:location];
+        }
     }
+}
+
+- (NSString *)fetchLocationIdentifierForSsid:(NSString *)ssid {
+    NSDictionary *configuration = [self ssidConfiguration];
+    if (ConfigKeySSIDs) {
+        return configuration[ssid];
+    } else {
+        return nil;
+    }
+}
+
+- (void)setLocationIdentifierForSsid:(NSString *)ssid identifier:(NSString *)identifier {
+    NSDictionary *configuration = [self ssidConfiguration];
+    NSMutableDictionary *writer = [configuration mutableCopy];
+    if (!writer) {
+        writer = [[NSMutableDictionary alloc] init];
+    }
+    writer[ssid] = identifier;
+    [[NSUserDefaults standardUserDefaults] setObject:writer forKey:ConfigKeySSIDs];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (NSDictionary *)ssidConfiguration {
+    return [[NSUserDefaults standardUserDefaults] dictionaryForKey:ConfigKeySSIDs];
 }
 
 @end

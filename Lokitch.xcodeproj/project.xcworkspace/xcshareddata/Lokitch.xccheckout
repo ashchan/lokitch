@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>58DE76F8-2C7A-4BA5-B073-C8C4428A4A3B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lokitch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2F1B6907-D9E0-415B-AAAB-6856A81098CC</key>
+		<string>ssh://github.com/ashchan/lokitch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lokitch.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2F1B6907-D9E0-415B-AAAB-6856A81098CC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ashchan/lokitch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2F1B6907-D9E0-415B-AAAB-6856A81098CC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2F1B6907-D9E0-415B-AAAB-6856A81098CC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lokitch</string>
+		</dict>
+	</array>
+</dict>
+</plist>

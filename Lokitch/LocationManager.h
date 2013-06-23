@@ -23,6 +23,7 @@
 + (LocationManager *)sharedManager;
 
 - (NSArray *)locations;
+- (Location *)findLocationByIdentifier:(NSString *)identifier;
 - (Location *)currentLocation;
 - (void)selectLocation:(Location *)location;
 
