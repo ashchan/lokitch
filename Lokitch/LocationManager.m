@@ -80,32 +80,35 @@
 }
 
 - (NSArray *)identifiersAndNames {
-    if (!_identifiersAndNames) {
-        _identifiersAndNames = [[NSMutableArray alloc] init];
-
-        NSString *data = [self runCommandWithArgement:nil];
-        NSArray *lines = [data componentsSeparatedByString:@"\n"];
-        NSRange range;
-        range.location = 1;
-        range.length = lines.count - 2;
-
-        for (NSString *line in [lines subarrayWithRange:range]) {
-            NSArray *scselectLine = [self parseScselectLine:line];
-            [_identifiersAndNames addObject:@[scselectLine[0], scselectLine[1]]];
-            if ([scselectLine[2] boolValue]) {
-                _activeIdentifier = [scselectLine[0] copy];
-            }
-        }
-    }
+    [self reload];
     return _identifiersAndNames;
 }
 
 - (NSString *)activeIdentifier {
+    [self reload];
     return _activeIdentifier;
 }
 
 - (void)setActive:(NSString *)identifier {
     [self runCommandWithArgement:identifier];
+}
+
+- (void)reload {
+    _identifiersAndNames = [[NSMutableArray alloc] init];
+
+    NSString *data = [self runCommandWithArgement:nil];
+    NSArray *lines = [data componentsSeparatedByString:@"\n"];
+    NSRange range;
+    range.location = 1;
+    range.length = lines.count - 2;
+
+    for (NSString *line in [lines subarrayWithRange:range]) {
+        NSArray *scselectLine = [self parseScselectLine:line];
+        [_identifiersAndNames addObject:@[scselectLine[0], scselectLine[1]]];
+        if ([scselectLine[2] boolValue]) {
+            _activeIdentifier = [scselectLine[0] copy];
+        }
+    }
 }
 
 - (NSArray *)parseScselectLine:(NSString *)line {
